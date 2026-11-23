@@ -24,6 +24,5 @@ python main.py
 ```
 
 ## Team
-- Member 1
+- Dalia Obeidat
 - Member 2
-- Member 3
