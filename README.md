@@ -25,4 +25,4 @@ python main.py
 
 ## Team
 - Dalia Obeidat
-- Member 2
+- Deema Hammouri
