@@ -24,6 +24,6 @@ python main.py
 ```
 
 ## Team
-- Member 1
+- DeemaHammouri
 - Member 2
-- Member 3
+
