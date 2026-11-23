@@ -24,6 +24,5 @@ python main.py
 ```
 
 ## Team
-- DeemaHammouri
-- Member 2
-
+- Dalia Obeidat
+- Deema Hammouri
