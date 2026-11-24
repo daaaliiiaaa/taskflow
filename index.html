@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taskflow - Task Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">
+<span class="logo-box">
+<svg viewBox="0 0 24 24" width="32" height="32">
+<rect x="2" y="2" width="20" height="20" rx="6" fill="#4f46e5"></rect>
+<path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+<span class="logo-info">
+<span class="logo-text">taskflow</span>
+<span class="logo-tagline">Plan. Track. Finish.</span>
+</span>
+</div>
+<p id="today"></p>
+</header>
+
+<hr>
+
+<section class="add-task">
+<h2>Add Task</h2>
+<form id="taskForm">
+<label for="title">Task Name:</label>
+<input type="text" id="title" maxlength="60" required>
+
+<label for="description">Description:</label>
+<textarea id="description" rows="3" maxlength="200"></textarea>
+
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" required>
+
+<label for="endDate">End Date:</label>
+<input type="date" id="endDate" required>
+
+<label for="priority">Priority:</label>
+<select id="priority">
+<option value="low">Low</option>
+<option value="medium" selected>Medium</option>
+<option value="high">High</option>
+</select>
+
+<label for="status">Status:</label>
+<select id="status">
+<option value="to-do">To Do</option>
+<option value="doing">Doing</option>
+<option value="done">Done</option>
+</select>
+
+<p id="formError"></p>
+
+<button type="submit">Add Task</button>
+</form>
+</section>
+
+<hr>
+
+<main>
+<h2>All Tasks</h2>
+<p id="summary"></p>
+
+<div class="toolbar">
+<label for="search">Search:</label>
+<input type="search" id="search" placeholder="Search by name or description">
+
+<label for="filterPriority">Priority:</label>
+<select id="filterPriority">
+<option value="all">All</option>
+<option value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select>
+
+<button type="button" id="clearDone">Clear Done</button>
+</div>
+
+<div class="columns">
+
+<section class="column">
+<h3>To Do <span class="count" id="count-to-do">0</span></h3>
+<ul id="to-do"></ul>
+</section>
+
+<section class="column">
+<h3>Doing <span class="count" id="count-doing">0</span></h3>
+<ul id="doing"></ul>
+</section>
+
+<section class="column">
+<h3>Done <span class="count" id="count-done">0</span></h3>
+<ul id="done"></ul>
+</section>
+
+<section class="column">
+<h3>Outdated <span class="count" id="count-out-dated">0</span></h3>
+<ul id="out-dated"></ul>
+</section>
+
+</div>
+</main>
+
+<hr>
+
+<footer>
+<p class="team-title">Built by</p>
+<ul class="team">
+<li>Deema Hammouri</li>
+<li>Dalia Obidat</li>
+<li>Feras</li>
+</ul>
+</footer>
+
+</body>
+</html>
